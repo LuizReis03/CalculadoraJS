@@ -10,18 +10,26 @@ body{
 table{
     background-color: rgb(24, 24, 24);
     color: white;
-    margin: 15% auto;
+    margin: auto;
     width: 20%;
     padding: 2%;
-    box-shadow: 0px 8px 16px 0px #5a5a5a80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-thead{
-    background-color: #c0c0c0;
-    margin: auto;
+.titulo{
+    margin: 10% auto;
+    margin-bottom: 0;
+    background-color: #181818;
+    color: #f1f1f1;
+    width: 20%;
+    text-align: center;
+    padding: 1.5% 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-tbody{
+tr{
     text-align: center;
     align-items: center;
 }
@@ -30,10 +38,11 @@ td{
     font-size: 2vw;
     background-color: #474747;
     border: #474747 solid 1px;
-    border-radius: 100%;
+    border-radius: 10px;
     width: 25%;
     padding: 3%;
     transition: 0.3s;
+    text-align: center;
 }
 
 td:hover{
@@ -41,11 +50,11 @@ td:hover{
 }
 
 .laranja{
-    background-color: #d8900b;
+    background-color: #2e2bdb;
 }
 
 .laranja:hover{
-    background-color: #af7509;
+    background-color: #2624c0;
 }
 
 .cinza{
@@ -56,4 +65,16 @@ td:hover{
 
 .cinza:hover{
     background-color: #acacac;
+}
+
+#resultado{
+    width: 14.1% !important;
+    height: 50px;
+    background-color: #d3d3d3;
+    font-size: 3em;
+    margin: auto;
+    padding: 1%;
+    border-left: #181818 solid 37px;
+    border-right: #181818 solid 37px;
+    text-align: right;
 }

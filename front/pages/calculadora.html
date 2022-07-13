@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/calc.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <main>
+        <table>
+            <h2 class="titulo">Calculadora</h2>
+            <p id="resultado"></p>
+            <tr>
+                <td class="cinza" onclick="clean()">C</td>
+                <td class="cinza" onclick="back()"><img src="../../static/img/excluir.png"></td>
+                <td class="cinza" onclick="insert('%')">%</td>
+                <td class="laranja" onclick="insert('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="insert('7')">7</td>
+                <td onclick="insert('8')">8</td>
+                <td onclick="insert('9')">9</td>
+                <td class="laranja" onclick="insert('*')">X</td>
+            </tr>
+            <tr>
+                <td onclick="insert('4')">4</td>
+                <td onclick="insert('5')">5</td>
+                <td onclick="insert('6')">6</td>
+                <td class="laranja" onclick="insert('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="insert('1')">1</td>
+                <td onclick="insert('2')">2</td>
+                <td onclick="insert('3')">3</td>
+                <td class="laranja" onclick="insert('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="insert('0')">0</td>
+                <td></td>
+                <td onclick="insert(',')">,</td>
+                <td class="laranja" onclick="calcular()">=</td>
+            </tr>
+        </table>
+    </main>
+
+    <script type="text/javascript" src="../script/script.js"></script>
+</body>
+
+</html>
